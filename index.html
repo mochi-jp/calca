@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>還元種計算機</title>
+  <title>ハコニワ還元種計算機</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
 
     <header class="section header">
-       <h1>還元種計算機</h1>
+       <h1>ハコニワ還元種計算機</h1>
     <p>入力窓タップでClearします。</p><p>キーボードの確定でも計算します。</p><p>計算後はtapしやすく下がる…ハズ！</p>
     </header>
 
-    <main class="section main">
+    <main class="main">
       <div id="result-area">
+      <!-- 結果のテーブル -->
         <table id="resultTable" style="display:none;">
           <tr><th>300</th><th>310</th><th>320</th></tr>
           <tr>
@@ -24,14 +25,16 @@
             <td id="result320"></td>
           </tr>
         </table>
-        
-  <!-- 入力欄とボタンをまとめて1つのラッパーにする -->
-<div id="input-button-wrapper">      
-  <input type="number" id="inputNumber" placeholder="点数" inputmode="numeric" />
-  <button onclick="calculate()">計算する！</button>
-</div>
+      </div>
 
-      
+    <div id="input-area">  
+   <!-- 入力欄は通常フローで -->
+      <input type="number" id="inputNumber" placeholder="点数を入力" inputmode="numeric" />
+    </div>
+   <!-- ボタンは画面下に固定 -->
+      <div id="button-area">
+      <button onclick="calculate()">計算する！</button>
+    </div>
     </main>
 
     <footer class="section footer">
@@ -53,7 +56,7 @@
         input.blur();
         setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 300);
       } else {
-        alert("ちゃんと数字を入れてね！");
+        alert("数字を入れてね");
       }
     }
 
