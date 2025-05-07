@@ -3,8 +3,10 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('https://github.com/mochi-jp/calca/blob/master/bg_floer.png?raw=true'); /* 背景模様を追加 */
-  background-size: cover;
+  background-image: url('https://github.com/mochi-jp/calca/blob/master/bg_floer.png?raw=true');
+  background-size: cover; /* 背景画像を画面全体に拡大縮小 */
+  background-repeat: no-repeat; /* 繰り返しを無効化 */
+  background-position: center; /* 中央に配置 */
   background-attachment: fixed;
   background-position: center;
 }
