@@ -124,7 +124,16 @@ th, td {
   padding: 10px 20px;
   text-align: right;
   min-width: 70px;
+  font-size: 20px
   border: none;
+}
+
+th {
+  font-weight: normal; /* ← 見出しを細字にする */
+}
+
+td {
+  font-weight: bold; /* ← 結果を太字にする */
 }
 
 /* 列ごとの色分け */
