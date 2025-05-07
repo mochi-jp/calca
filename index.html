@@ -27,11 +27,14 @@
         </table>
       </div>
 
-    <!-- 入力欄とボタンまとめて画面下に固定 -->
-<div id="input-button-wrapper">
-  <input type="number" id="inputNumber" placeholder="点数を入力" inputmode="numeric" />
-  <button onclick="calculate()">計算する！</button>
-</div>
+    <div id="input-area">  
+   <!-- 入力欄は通常フローで -->
+      <input type="number" id="inputNumber" placeholder="点数を入力" inputmode="numeric" />
+    </div>
+   <!-- ボタンは画面下に固定 -->
+      <div id="button-area">
+      <button onclick="calculate()">計算する！</button>
+    </div>
     </main>
 
     <footer class="section footer">
