@@ -18,7 +18,7 @@ html, body {
   text-align: center;
 }
 
-/* 高さを割合で指定！ */
+/* 高さを割合で指定 */
 .header {
   flex: 0 0 16%;
   flex-direction: column;
@@ -26,7 +26,11 @@ html, body {
 
 .main {
   flex: 1 0 58%;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 120px; /* 入力・ボタン領域の分を空ける */
 }
 
 .footer {
@@ -35,23 +39,9 @@ html, body {
   color: #666;
 }
 
-#inputNumber {
-  width: 200px;
-  font-size: 20px;
-  padding: 10px;
-  margin: 15px 0;
-  border-radius: 8px;
-  text-align: right;
-  border: 1px solid #ccc;
-}
-
-button {
-  font-size: 20px;
-  padding: 10px 85px;
-  border: none;
-  background-color: #ffcc66;
-  border-radius: 10px;
-  cursor: pointer;
+#result-area {
+  text-align: center;
+  margin-top: 10px;
 }
 
 table {
@@ -67,29 +57,6 @@ th, td {
   min-width: 70px;
 }
 
-#button-area {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  z-index: 1000;
-  pointer-events: auto;
-  padding-bottom: env(safe-area-inset-bottom); /* iPhone対策 */
-}
-
-#button-area button {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 12px;
-  background-color: #ffcc66;
-  border: none;
-  cursor: pointer;
-}
-
 #input-button-wrapper {
   position: fixed;
   bottom: env(safe-area-inset-bottom, 0);
@@ -103,4 +70,23 @@ th, td {
   background-color: #fff;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   z-index: 1000;
+}
+
+#inputNumber {
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: right;
+  border: 1px solid #ccc;
+}
+
+#input-button-wrapper button {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #ffcc66;
+  border: none;
+  cursor: pointer;
 }
