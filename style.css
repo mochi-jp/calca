@@ -25,12 +25,26 @@ html, body {
 }
 
 .main {
+  display: flex;/*セット*/
   flex: 1 0 58%;
+  flex-direction: column;
+  justify-content: space-between; /* ← 上下に分ける！　flexとセット */
+ /* justify-content: center;    縦方向の中央寄せ */
+ /*align-items: center;         横方向の中央寄せ */
+} 
+
+#result-area {
+  margin-top: 0;
+  padding-top: 10px; 
+  /*  テーブルだけ個別に位置調整 mainの代わり  */
+} 
+
+#input-area {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-bottom: 120px; /* 入力・ボタン領域の分を空ける */
+  align-items: center; /* 入力とボタンを中央に揃える */
+  gap: 10px; /* 入力とボタンの間にスペース */
+  margin-bottom: 110px; /*  この高さ分、ボタンに隠れないようにする  */
 }
 
 .footer {
@@ -39,9 +53,23 @@ html, body {
   color: #666;
 }
 
-#result-area {
-  text-align: center;
-  margin-top: 10px;
+#inputNumber {
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: right;
+  border: 1px solid #ccc;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 85px;
+  border: none;
+  background-color: #ffcc66;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 table {
@@ -57,31 +85,20 @@ th, td {
   min-width: 70px;
 }
 
-#input-button-wrapper {
+#button-area {
   position: fixed;
-  bottom: env(safe-area-inset-bottom, 0);
-  left: 0;
-  right: 0;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 12px;
-  background-color: #fff;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  justify-content: center;
   z-index: 1000;
+  pointer-events: auto;
+  padding-bottom: env(safe-area-inset-bottom); /* iPhone対策 */
 }
 
-#inputNumber {
-  width: 200px;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: right;
-  border: 1px solid #ccc;
-}
-
-#input-button-wrapper button {
+#button-area button {
   width: 200px;
   font-size: 18px;
   padding: 10px;
@@ -89,4 +106,11 @@ th, td {
   background-color: #ffcc66;
   border: none;
   cursor: pointer;
+}
+
+#resultTable {
+  margin-top: 0;
+  padding-top: 10px; /* 必要に応じて */
+  margin-left: auto;
+  margin-right: auto;
 }
