@@ -123,19 +123,11 @@ table {
   background-color: transparent;
 }
 
-th {
-  font-weight: normal; /* 文字の普通の太さ */
-}
-
 th, td {
   padding: 10px 20px;
   text-align: right;
   min-width: 70px;
   border: none;
-}
-
-td {
-  font-weight: bold; /* 計算結果を太字 */
 }
  
 /* 列ごとの色分け */
