@@ -146,7 +146,7 @@ td:nth-child(2), th:nth-child(2) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://raw.githubusercontent.com/mochi-jp/calca/master/bg_flower.png');
+  background-image: url('path/to/bg_floer.png');
   background-size: cover;
   /*background-position: center;*/
   z-index: -1; /* 背景が後ろに隠れるように */
