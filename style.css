@@ -148,7 +148,8 @@ td:nth-child(2), th:nth-child(2) {
   height: 100%;
   background-image: url('https://github.com/mochi-jp/calca/blob/master/bg_floer.png?raw=true');
   background-size: cover;
-  background-position: center;
+  position: fixed;
+  /*background-position: center;*/
   z-index: -1; /* 背景が後ろに隠れるように */
   filter: brightness(1.1) blur(2px); /* フィルター */
 }
