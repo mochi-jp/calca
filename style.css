@@ -129,6 +129,16 @@ th, td {
   min-width: 70px;
   border: none;
 }
+
+th {
+  font-weight: normal;
+  text-align: right;
+}
+
+td {
+  font-weight: bold;
+  text-align: right;
+}
  
 /* 列ごとの色分け */
 td:nth-child(1), th:nth-child(1),
