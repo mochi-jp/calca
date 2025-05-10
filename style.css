@@ -123,6 +123,10 @@ table {
   background-color: transparent;
 }
 
+th {
+  font-weight: normal; /* 文字の普通の太さ */
+]
+
 th, td {
   padding: 10px 20px;
   text-align: right;
@@ -130,6 +134,10 @@ th, td {
   border: none;
 }
 
+td {
+  font-weight: bold; /* 計算結果を太字 */
+}
+ 
 /* 列ごとの色分け */
 td:nth-child(1), th:nth-child(1),
 td:nth-child(3), th:nth-child(3) {
