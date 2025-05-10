@@ -118,27 +118,33 @@ button {
 }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
-  background-color: transparent;
+  border-collapse: separate;
+  border-spacing: 3px 6px; /* 横3px・縦6pxの隙間 */
+  table-layout: fixed;
+  width: auto; /* 必要なら固定幅にもできる */
+  margin-left: auto;
+  margin-right: 0; /* 右寄せ */
 }
 
 th, td {
-  padding: 10px 20px;
   text-align: right;
-  min-width: 70px;
-  border: none;
+  padding: 10px;
+  border-radius: 10px;
 }
 
+/* thデザイン */
 th {
+  background-color: rgba(255, 255, 204, 0.9);
   font-weight: normal;
-  text-align: right;
+  font-size: inherit;
 }
 
+/* tdデザイン */
 td {
+  background-color: #f5f5f5;
   font-weight: bold;
-  font-size: 1.2em; /* ちょっと大きめに */
-  text-align: right;
+  font-size: 1.2em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 列ごとの色分け */
