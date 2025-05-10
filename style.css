@@ -137,6 +137,7 @@ th {
 
 td {
   font-weight: bold;
+  font-size: 1.2em; /* ちょっと大きめに */
   text-align: right;
 }
 
