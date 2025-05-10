@@ -151,5 +151,5 @@ td:nth-child(2), th:nth-child(2) {
   background-size: cover;
   /*background-position: center;*/
   z-index: -1; /* 背景が後ろに隠れるように */
-  filter: brightness(1.1) blur(3px); /* フィルター */
+  filter: brightness(1.1) blur(2px); /* フィルター ぼかし */
 }
