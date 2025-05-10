@@ -139,7 +139,7 @@ td {
   font-weight: bold;
   text-align: right;
 }
- 
+
 /* 列ごとの色分け */
 td:nth-child(1), th:nth-child(1),
 td:nth-child(3), th:nth-child(3) {
