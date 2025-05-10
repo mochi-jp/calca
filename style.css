@@ -118,7 +118,8 @@ button {
 }
 
 table {
-  border-collapse: separate;
+  width: 200px;
+  /*border-collapse: separate;*/
   border-spacing: 3px 6px; /* 横3px・縦6pxの隙間 */
   table-layout: fixed;
   width: auto; /* 必要なら固定幅にもできる */
