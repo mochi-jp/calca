@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  /*background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)), url('https://raw.githubusercontent.com/mochi-jp/calca/master/bg_flower.png');*/
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)), url('bg_flower.png');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
